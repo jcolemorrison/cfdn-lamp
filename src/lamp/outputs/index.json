@@ -1,0 +1,6 @@
+{
+  "WebsiteURL" : {
+    "Description" : "URL for newly created LAMP stack",
+    "Value" : { "Fn::Join" : ["", ["http://", { "Fn::GetAtt" : [ "WebServerInstance", "PublicDnsName" ]}]] }
+  }
+}
